@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap");
+body {
+  margin: 0;
+}
+.search__input {
+  display: flex;
+  border: solid rgba(0, 0, 0, 0.3) 1px;
+  padding: 0 10px;
+  border-radius: 12px;
+  img {
+    margin: 10px 10px;
+    width: 25px;
+    height: 25px;
+  }
+  input {
+    width: 350px;
+
+    border: none;
+    padding: 0 10px;
+    color: #808080;
+    &:focus {
+      outline: none;
+    }
+  }
+}
+.logo__conatiner {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.sell__btn {
+  height: 45px;
+  width: 150px;
+  padding: 0 10px;
+  font-weight: bold;
+  white-space: nowrap;
+  background-color: #c6ac96;
+  font-weight: 600;
+  font-size: 20px;
+  border: none;
+  border-radius: 12px;
+  margin-left: 5px;
+  letter-spacing: 1px;
+
+  cursor: pointer;
+  transition: all ease 0.3s;
+  &:hover {
+    background-color: #fff;
+    color: #c6ac96;
+    border: solid #c6ac96 1px;
+  }
+}
+.signin__btn,
+.signup__btn {
+  letter-spacing: 2px;
+  font-weight: 500;
+  height: 45px;
+  width: 120px;
+  font-size: 18px;
+  white-space: nowrap;
+  color: #000;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all ease 0.3s;
+  &:hover {
+    color: #c6ac96;
+  }
+}
+.logo {
+  width: 280px;
+  height: 60px;
+}
+@media screen and (max-width: 1250px) {
+  .logo {
+    width: 150px;
+    height: 50px;
+  }
+  .sell__btn,
+  .signin__btn,
+  .signup__btn {
+    width: 100px;
+    font-size: 14px;
+  }
+}
+.nav__search {
+  border-radius: 12px !important;
+  padding-left: 70px !important;
+  &::placeholder {
+    color: #808080 !important;
+  }
+}
+@media screen and (max-width: 991px) {
+  .nav__bag {
+    margin-left: 15px;
+    padding-top: 10px;
+  }
+  .nav__search {
+    border-radius: 12px !important;
+    padding-left: 20px !important;
+  }
+  .logo__conatiner {
+    display: none;
+  }
+  .nav {
+    display: none;
+  }
+  .nav__search {
+    max-width: 300px !important;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .search__input {
+    input {
+      width: 150px;
+      font-size: 12px;
+    }
+  }
+}
+@media screen and (max-width: 450px) {
+  .nav__search {
+    max-width: 200px !important;
+    font-size: 12px !important;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .nav__search {
+    max-width: 150px !important;
+    font-size: 10px !important;
+  }
+  .search__input {
+    input {
+      width: 100px;
+      font-size: 12px;
+    }
+  }
+}

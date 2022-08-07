@@ -1,0 +1,160 @@
+.footer__container {
+  display: flex;
+  background-color: #221f1e;
+  min-height: 50vh;
+  width: 100%;
+}
+.footer__services {
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  justify-content: space-around;
+  padding: 70px;
+  h1 {
+    text-transform: uppercase;
+    font-size: 22px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 30px;
+  }
+  li {
+    font-size: 18px;
+    color: #c4c4c4;
+    list-style-type: none;
+    padding: 10px 0;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  ul {
+    flex-direction: column;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.footer__logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 40%;
+  // align-items: center;
+  margin-left: 30px;
+  .socialmedia {
+    display: flex;
+    align-items: flex-start !important;
+    justify-content: flex-start;
+    gap: 17px;
+  }
+  img {
+    width: 20px;
+    height: 20px;
+  }
+}
+.footer__accordion__arrow {
+  margin-left: 10px;
+}
+.footer__legal {
+  background-color: #221f1e;
+  color: #c4c4c4;
+  border-top: 1px solid #c4c4c4;
+  padding: 70px;
+  padding-top: 30px;
+}
+
+.footer__accordion {
+  font-size: 24px;
+  padding-bottom: 30px;
+}
+.sub__footer {
+  display: flex;
+  width: 100%;
+  ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    gap: 30px;
+  }
+}
+
+.stores {
+  width: 210px !important;
+  height: 30px !important;
+}
+
+.accordion__arrow {
+  margin-left: 20px;
+  height: 20px;
+}
+.partnership {
+  padding: 30px 50px;
+  text-transform: capitalize;
+  font-family: "Montserrat", sans-serif;
+  color: #5d5d5d;
+  font-size: 14px;
+}
+
+.credit {
+  display: flex;
+  flex-direction: column;
+  color: #5d5d5d;
+  span {
+    margin-top: 30px;
+  }
+}
+.signature {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 975px) {
+  .footer__services {
+    flex-direction: column;
+    h1 {
+      margin: 30px 0;
+    }
+    li {
+      margin: 0;
+      padding: 5px;
+    }
+  }
+  .sub__footer {
+    display: flex;
+    flex-direction: column;
+    ul {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+  }
+  .footer__logos {
+    margin: 0;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .footer__services {
+    padding: 25px;
+  }
+  .footer__accordion {
+    font-size: 12px;
+  }
+  .footer__legal {
+    padding: 25px;
+  }
+  .partnership {
+    padding: 25px;
+  }
+  .signature{
+    flex-direction: column;
+  }
+}
